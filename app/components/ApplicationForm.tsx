@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import { createApplication, type NewApplication } from '@/lib/applications'
-import { Props } from 'next/dist/client/script'
 import { updateApplication, type Application } from '@/lib/applications'
 
 type Props = {
