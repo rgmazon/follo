@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Playfair_Display, DM_Mono } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/app/components/Navbar'
+import { Analytics } from '@vercel/analytics/react';
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body className={`${playfair.variable} ${dmMono.variable}`}>
         <Navbar />
         {children}
+        <Analytics />
       </body>
     </html>
   )
